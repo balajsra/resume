@@ -1,7 +1,7 @@
 %-------------------------
 % Resume in Latex
 % Author : Sravan Balaji
-% Updated: January 22nd, 2020
+% Updated: September 6th, 2020
 % License : MIT
 %------------------------
 
@@ -101,7 +101,7 @@
   \resumeSubHeadingListStart
   
     \resumeSubheading
-    	{University of Michigan}{Ann Arbor, MI}
+    	{\href{https://umich.edu/}{University of Michigan}}{Ann Arbor, MI}
     	{B.S.E. in Mechanical Engineering and Computer Science; GPA: 3.757}{Sep. 2016 -- Dec. 2020}
     	
     	\resumeItemListStart
@@ -115,10 +115,24 @@
 %-----------WORK EXPERIENCE-----------------
 \section{Work Experience}
 \resumeSubHeadingListStart
-  
+
+	% Rivian 3
+	\resumeSubheading
+		{\href{https://rivian.com/}{Rivian}}{Remote}
+		{ADAS Controls Intern}{Jun. 2020 -- Aug. 2020}
+		
+		\resumeItemListStart
+			\item{Supported creation of Model-in-Loop framework for production controls software components; tested ~50 requirements, identified and resolved 7 issues}
+			
+			\item{Integrated speed limit algorithm into production controls software for use with Simulink Coder C/C++ code generation; considerations made for embedded system processing limits and time delays}
+			
+			\item{Modified MATLAB data processing scripts to work with new test logs; compared performance against requirements and simulation to determine controls parameters to tune}
+			
+		\resumeItemListEnd
+
   	% Hughes Network Systems
 	\resumeSubheading
-		{Hughes Network Systems}{San Diego, CA}
+		{\href{https://www.hughes.com/}{Hughes Network Systems}}{San Diego, CA}
 		{Software Development Intern}{May 2019 -- Aug. 2019}
 		
 		\resumeItemListStart
@@ -129,18 +143,27 @@
 			
 		\resumeItemListEnd
 		
-	% Rivian
+	% Rivian 2
 	\resumeSubheading
-		{Rivian}{Plymouth, MI}
+		{\href{https://rivian.com/}{Rivian}}{Plymouth, MI}
 		{Business Technology Intern}{May 2018 -- Dec. 2018}
 		
 		\resumeItemListStart
 			
-			% \item{Championed effort to remove BOM data inconsistencies; developed Excel macro to summarize mass and cost data, alert PMs of incorrect data; resulted in faster detection and resolution of issues}
+			\item{Championed effort to remove BOM data inconsistencies; developed Excel macro to summarize mass and cost data, alert PMs of incorrect data; resulted in faster detection and resolution of issues}
 			
 			\item{Introduced and designed an internal website to collect and display data from business systems utilizing Python and Django; worked with REST APIs to present reports of issues by severity}
 			
 			\item{Led effort to migrate IT team to a new service desk; worked with Jira Service Desk to automate triage and assignment of IT tickets; increased ticket resolution rate within SLA targets from 70\% to 95\%}
+			
+		\resumeItemListEnd
+	% Rivian 1
+	\resumeSubheadingTwo
+		{Vehicle Integration Intern}{Jun. 2017 -- Aug. 2017}
+		
+		\resumeItemListStart
+		
+			\item{Developed a program in Java to summarize results of simulation; allowed users to modify inputs to see projected results of simulation to avoid additional testing and reduce costs}
 			
 		\resumeItemListEnd
 
@@ -152,7 +175,7 @@
 
 	% Compliant Systems Design Lab
 	\resumeSubheading
-		{Compliant Systems Design Lab}{Ann Arbor, MI}
+		{\href{http://csdl.engin.umich.edu/}{Compliant Systems Design Lab}}{Ann Arbor, MI}
 		{Research Assistant}{Jan. 2019 -- Apr. 2019}
 	
 		\resumeItemListStart
@@ -166,36 +189,36 @@
 \resumeSubHeadingListEnd
 
 %--------PROJECTS------------
-\section{Projects}
-\resumeSubHeadingListStart
+% \section{Projects}
+% \resumeSubHeadingListStart
 
-	% Reduce Reuse Recycle Robot
-	\resumeSubheading
-		{Reduce Reuse Recycle Robot}{Ann Arbor, MI}
-		{EECS 467 Course Project (\href{https://eecs-467-w20-rrrobot-project.github.io/RRRobot/home}{GitHub: EECS-467-W20-RRRobot-Project/RRRobot})}{Mar. 2020 -- Apr. 2020}
+% 	% Reduce Reuse Recycle Robot
+% 	\resumeSubheading
+% 		{Reduce Reuse Recycle Robot}{Ann Arbor, MI}
+% 		{EECS 467 Course Project (\href{https://eecs-467-w20-rrrobot-project.github.io/RRRobot/home}{GitHub: EECS-467-W20-RRRobot-Project/RRRobot})}{Mar. 2020 -- Apr. 2020}
 		
-		\resumeItemListStart
+% 		\resumeItemListStart
 			
-			\item Simulated UR10 robot arm with ROS and Gazebo that classifies and sorts items into trash and recycling
+% 			\item Simulated UR10 robot arm with ROS and Gazebo that classifies and sorts items into trash and recycling
 			
-			\item Employed convolutional neural network to classify images, depth camera point cloud coordinate transformations to determine grip position, and inverse kinematics to calculate joint positions
+% 			\item Employed convolutional neural network to classify images, depth camera point cloud coordinate transformations to determine grip position, and inverse kinematics to calculate joint positions
 			
-		\resumeItemListEnd
+% 		\resumeItemListEnd
 
-	% Autonomous Delivery of scCO2
-	\resumeSubheading
-		{Autonomous Delivery of Supercritical CO\textsubscript{2}}{Canton, MI}
-		{MECHENG 450 Course Project with \href{https://www.fusioncoolant.com/}{Fusion Coolant Systems}}{Sep. 2019 -- Dec. 2019}
+% 	% Autonomous Delivery of scCO2
+% 	\resumeSubheading
+% 		{Autonomous Delivery of Supercritical CO\textsubscript{2}}{Canton, MI}
+% 		{MECHENG 450 Course Project with \href{https://www.fusioncoolant.com/}{Fusion Coolant Systems}}{Sep. 2019 -- Dec. 2019}
 		
-		\resumeItemListStart
+% 		\resumeItemListStart
 			
-			\item Led team of 5 through entire design process for semester project: problem definition, concept generation and evaluation, final design prototyping and validation
+% 			\item Led team of 5 through entire design process for semester project: problem definition, concept generation and evaluation, final design prototyping and validation
 			
-			\item Performed engineering analysis, technical report writing, and CAD in SolidWorks; created engineering drawings, design review presentations, and physical prototype of final design
+% 			\item Performed engineering analysis, technical report writing, and CAD in SolidWorks; created engineering drawings, design review presentations, and physical prototype of final design
 			
-		\resumeItemListEnd
+% 		\resumeItemListEnd
 	
-\resumeSubHeadingListEnd
+% \resumeSubHeadingListEnd
 
 %--------SKILLS------------
 \section{Skills}
@@ -213,9 +236,9 @@
   		{Simulation}
   		{MATLAB, Simulink}
   	
-  	\resumeSkillItemHeading
-  		{Manufacturing}
-  		{University of Michigan Wilson Center Basic I $\&$ II, Mill Training}
+  	% \resumeSkillItemHeading
+  	% 	{Manufacturing}
+  	% 	{University of Michigan Wilson Center Basic I $\&$ II, Mill Training}
   	
   	\resumeSkillItemHeading
   		{Languages}
