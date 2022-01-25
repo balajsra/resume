@@ -1,7 +1,6 @@
 %-------------------------
 % Resume in Latex
 % Author : Sravan Balaji
-% Updated: September 6th, 2020
 % License : MIT
 %------------------------
 
@@ -46,39 +45,38 @@
 
 \newcommand{\resumeSkillItemHeading}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{: #2 \vspace{-4pt}}
   }
 }
 
 \newcommand{\resumeItem}[1]{
 	\item\small{
-		\textbf{#1}
+		#1
 	}
 }
 
-\newcommand{\resumeSubheading}[4]{
+\newcommand{\resumeCompanyHeading}[2]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+      \textbf{#1} & \textbf{#2} \\
+    \end{tabular*}\vspace{-0pt}
 }
 
-\newcommand{\resumeSubheadingTwo}[2]{
+\newcommand{\resumeJobHeading}[3]{
 	\vspace{-1pt}
 	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-		\textit{\small#1} & \textit{\small #2} \\
-	\end{tabular*}\vspace{-5pt}
+		{\small#1} - {\small #2} & {\small #3} \\
+	\end{tabular*}\vspace{-4pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeCompanyListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeCompanyListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -98,93 +96,76 @@
 
 %-----------EDUCATION-----------------
 \section{Education}
-\resumeSubHeadingListStart
 
-\resumeSubheading
-{\href{https://umich.edu/}{University of Michigan}}{Ann Arbor, MI}
-{M.S. in Robotics; Focus in Acting; GPA: 3.957}{Jan. 2021 -- Dec. 2021}
+\resumeCompanyListStart
+  % UMICH
+  \resumeCompanyHeading{\href{https://umich.edu/}{University of Michigan - Ann Arbor}}{Sep. 2016 - Dec. 2021}
+    \resumeJobHeading{M.S. in Robotics}{Ann Arbor, MI}{Jan. 2021 -- Dec. 2021}
+    % \resumeJobHeading{M.S. in Robotics; Focus in Acting; GPA: 3.982}{Ann Arbor, MI}{Jan. 2021 -- Dec. 2021}
+    % \resumeItemListStart
+    %   \item{Mobile Robotics; Design of Digital Control Systems; Self Driving Cars; Robotic Systems Lab}
+    % \resumeItemListEnd
 
-\resumeItemListStart
-\item{Mobile Robotics; Design of Digital Control Systems; Robot Operating Systems; Robotic Systems Lab}
-\resumeItemListEnd
+    \resumeJobHeading{B.S.E. in Mechanical Engineering}{Ann Arbor, MI}{Sep. 2016 -- Dec. 2020}
+    % \resumeJobHeading{B.S.E. in Mechanical Engineering; Focus in Controls; GPA: 3.776}{Ann Arbor, MI}{Sep. 2016 -- Dec. 2020}
+    % \resumeItemListStart
+    %   \item{Automatic Control; Modeling, Analysis, and Control of Dynamic Systems}
+    % \resumeItemListEnd
 
-\resumeSubheadingTwo
-{B.S.E. in Mechanical Engineering; Focus in Controls; GPA: 3.776}{Sep. 2016 -- Dec. 2020}
-
-\resumeItemListStart
-\item{Automatic Control; Modeling, Analysis, and Control of Dynamic Systems}
-\resumeItemListEnd
-
-\resumeSubheadingTwo
-{B.S.E. in Computer Science; Focus in Intelligent Systems; GPA: 3.776}{Sep. 2016 -- Dec. 2020}
-
-\resumeItemListStart
-\item{Autonomous Robotics Lab; Machine Learning; Computer Vision}
-\resumeItemListEnd
-
-\resumeSubHeadingListEnd
+    \resumeJobHeading{B.S.E. in Computer Science}{Ann Arbor, MI}{Sep. 2016 -- Dec. 2020}
+    % \resumeJobHeading{B.S.E. in Computer Science; Focus in Intelligent Systems; GPA: 3.776}{Ann Arbor, MI}{Sep. 2016 -- Dec. 2020}
+    % \resumeItemListStart
+    %   \item{Autonomous Robotics Lab; Machine Learning; Computer Vision}
+    % \resumeItemListEnd
+\resumeCompanyListEnd
 
 %-----------WORK EXPERIENCE-----------------
 \section{Work Experience}
-\resumeSubHeadingListStart
 
-% MITRE
-\resumeSubheading
-{\href{https://mitre.org/}{MITRE}}{Remote}
-{Graduate Navigation Intern}{May 2021 -- Aug. 2021}
+\resumeCompanyListStart
+  % MITRE
+  \resumeCompanyHeading{\href{https://mitre.org/}{MITRE}}{May 2021 - Present}
+    \resumeJobHeading{Associate Autonomous Systems Engineer}{McLean, VA}{Jan. 2022 -- Present}
 
-% Rivian 3
-\resumeSubheading
-{\href{https://rivian.com/}{Rivian}}{Remote}
-{ADAS Controls Intern}{Jun. 2020 -- Aug. 2020}
+    \resumeJobHeading{Graduate Navigation Intern}{Remote}{May 2021 -- Aug. 2021}
+    \resumeItemListStart
+      \resumeItem{Designed and developed approach to identify implicit mitigation links between nodes in a directed acyclic graph for PNT Defense \& Threat Library written in Python}
+      \resumeItem{Revamped and formalized software development process to improve visibility and organization of PNT Assurance project written in Julia}
+      \resumeItem{Placed 3rd in team-based machine learning intern hackathon; identified malicious URLs based on URL strings and information on age of domain; achieved 0.94 F1 score}
+      \resumeItem{Placed top 3 in intern AWS DeepRacer challenge; trained reinforcement learning model to control simulated autonomous vehicle around unseen race tracks}
+    \resumeItemListEnd
 
-\resumeItemListStart
-\item{Supported creation of Model-in-Loop framework for production controls software components; tested ~50 requirements, identified and resolved 7 issues}
+  % Rivian
+  \resumeCompanyHeading{\href{https://rivian.com/}{Rivian}}{Jun. 2020 - Aug. 2020}
+    \resumeJobHeading{ADAS Controls Intern}{Remote}{Jun. 2020 -- Aug. 2020}
+    \resumeItemListStart
+      \resumeItem{Supported creation of Model-in-Loop framework for production controls software components; tested ~50 requirements, identified and resolved 7 issues}
+      \resumeItem{Integrated speed limit algorithm into production controls software for use with Simulink Coder C/C++ code generation; considerations made for embedded system processing limits and time delays}
+      \resumeItem{Modified MATLAB data processing scripts to work with new test logs; compared performance against requirements and simulation to determine controls parameters to tune}
+    \resumeItemListEnd
 
-\item{Integrated speed limit algorithm into production controls software for use with Simulink Coder C/C++ code generation; considerations made for embedded system processing limits and time delays}
+  % Hughes Network Systems
+  \resumeCompanyHeading{\href{https://www.hughes.com/}{Hughes Network Systems}}{May 2019 - Aug. 2019}
+    \resumeJobHeading{Software Development Intern}{San Diego, CA}{May 2019 -- Aug. 2019}
+    \resumeItemListStart
+      \resumeItem{Created Windows GUI app in C\# employing .NET framework; automated mobile terminal configuration process to reduce user involvement, prevent errors, and decrease configuration time}
+      \resumeItem{Implemented location based services on terminal software written in C; leveraged MQTT-SN protocol to provide low-cost method of sending GPS data to server}
+    \resumeItemListEnd
 
-\item{Modified MATLAB data processing scripts to work with new test logs; compared performance against requirements and simulation to determine controls parameters to tune}
+  % Rivian
+  \resumeCompanyHeading{\href{https://rivian.com/}{Rivian}}{May 2017 - Dec. 2018}
+    \resumeJobHeading{Business Technology Intern}{Plymouth, MI}{May 2018 -- Dec. 2018}
+    \resumeItemListStart
+      \resumeItem{Championed effort to remove BOM data inconsistencies; developed Excel macro to summarize mass and cost data, alert PMs of incorrect data; resulted in faster detection and resolution of issues}
+      \resumeItem{Introduced and designed an internal website to collect and display data from business systems utilizing Python and Django; worked with REST APIs to present reports of issues by severity}
+      \resumeItem{Led effort to migrate IT team to a new service desk; worked with Jira Service Desk to automate triage and assignment of IT tickets; increased ticket resolution rate within SLA targets from 70\% to 95\%}
+    \resumeItemListEnd
 
-\resumeItemListEnd
-
-% Hughes Network Systems
-\resumeSubheading
-{\href{https://www.hughes.com/}{Hughes Network Systems}}{San Diego, CA}
-{Software Development Intern}{May 2019 -- Aug. 2019}
-
-\resumeItemListStart
-
-\item{Created Windows GUI app in C\# employing .NET framework; automated mobile terminal configuration process to reduce user involvement, prevent errors, and decrease configuration time}
-
-\item{Implemented location based services on terminal software written in C; leveraged MQTT-SN protocol to provide low-cost method of sending GPS data to server}
-
-\resumeItemListEnd
-
-% Rivian 2
-\resumeSubheading
-{\href{https://rivian.com/}{Rivian}}{Plymouth, MI}
-{Business Technology Intern}{May 2018 -- Dec. 2018}
-
-\resumeItemListStart
-
-\item{Championed effort to remove BOM data inconsistencies; developed Excel macro to summarize mass and cost data, alert PMs of incorrect data; resulted in faster detection and resolution of issues}
-
-\item{Introduced and designed an internal website to collect and display data from business systems utilizing Python and Django; worked with REST APIs to present reports of issues by severity}
-
-\item{Led effort to migrate IT team to a new service desk; worked with Jira Service Desk to automate triage and assignment of IT tickets; increased ticket resolution rate within SLA targets from 70\% to 95\%}
-
-\resumeItemListEnd
-% Rivian 1
-\resumeSubheadingTwo
-{Vehicle Integration Intern}{Jun. 2017 -- Aug. 2017}
-
-\resumeItemListStart
-
-\item{Developed a program in Java to summarize results of simulation; allowed users to modify inputs to see projected results of simulation to avoid additional testing and reduce costs}
-
-\resumeItemListEnd
-
-\resumeSubHeadingListEnd
+    \resumeJobHeading{Vehicle Integration Intern}{Livonia, MI}{May 2017 -- Aug. 2017}
+    \resumeItemListStart
+      \resumeItem{Developed a program in Java to summarize results of simulation; allowed users to modify inputs to see projected results of simulation to avoid additional testing and reduce costs}
+    \resumeItemListEnd
+\resumeCompanyListEnd
 
 %% %-----------RESEARCH-----------------
 %% \section{Research}
@@ -241,28 +222,27 @@
 \section{Skills}
 \resumeItemListStart
 
-\resumeSkillItemHeading
-{Programming}
-{\href{https://www.cplusplus.com/}{C/C++}, \href{https://www.python.org/}{Python}, \href{https://www.mathworks.com/products/matlab.html}{MATLAB}, \href{https://www.javascript.com/}{JavaScript}, \href{https://docs.microsoft.com/en-us/dotnet/csharp/}{C\#}, \href{https://www.java.com/}{Java}, \href{https://www.arduino.cc/}{Arduino}, \href{https://www.latex-project.org/}{\LaTeX}}
+\resumeSkillItemHeading{Programming}
+{\href{https://www.cplusplus.com/}{C/C++}, \href{https://www.python.org/}{Python}, \href{https://www.mathworks.com/products/matlab.html}{MATLAB}, \href{https://julialang.org}{Julia}, \href{https://www.javascript.com/}{JavaScript}, \href{https://docs.microsoft.com/en-us/dotnet/csharp/}{C\#}, \href{https://www.java.com/}{Java}}
 
-\resumeSkillItemHeading
-{Development}
-{\href{https://www.linux.org}{GNU/Linux}, \href{https://git-scm.com}{Git}, \href{https://www.docker.com}{Docker}, \href{https://www.vim.org}{Vim}, \href{https://www.gnu.org/software/emacs/}{GNU Emacs}, \href{https://code.visualstudio.com/}{Visual Studio Code}}
+% \resumeSkillItemHeading
+% {Markup}
+% {\href{https://www.latex-project.org/}{\LaTeX}, HTML, Markdown, \href{https://orgmode.org}{Org Mode}}
 
-\resumeSkillItemHeading
-{Libraries/Frameworks}
-{\href{https://www.ros.org/}{ROS}, \href{https://gtsam.org/}{GTSAM}, \href{https://numpy.org/}{NumPy}, \href{https://opencv.org}{OpenCV}, \href{https://pytorch.org/}{PyTorch}, \href{https://vuejs.org/}{Vue.js}, \href{https://getbootstrap.com/}{Bootstrap}}
+\resumeSkillItemHeading{Development}
+{\href{https://www.linux.org}{GNU/Linux}, \href{https://git-scm.com}{Git}, \href{https://www.docker.com}{Docker}, \href{https://code.visualstudio.com/?wt.mc_id=DX_841432}{Visual Studio Code}, \href{https://www.gnu.org/software/emacs/}{GNU Emacs}, \href{https://www.vim.org}{Vim}, \href{https://atom.io}{Atom}, \href{https://visualstudio.microsoft.com/vs/}{Visual Studio}}
 
-\resumeSkillItemHeading
-{Computer Aided Design}
-{\href{https://www.solidworks.com/}{SolidWorks}, \href{https://www.3ds.com/products-services/catia/}{CATIA}}
+\resumeSkillItemHeading{Libraries/Frameworks}
+{\href{https://www.ros.org/}{ROS}, \href{https://numpy.org/}{NumPy}, \href{https://opencv.org}{OpenCV}, \href{https://pytorch.org/}{PyTorch}, \href{https://vuejs.org/}{Vue.js}, \href{https://getbootstrap.com/}{Bootstrap}, \href{https://gtsam.org/}{GTSAM}}
+
+\resumeSkillItemHeading{Computer Aided Design}
+{\href{https://www.solidworks.com/}{SolidWorks},\href{https://www.3ds.com/products-services/catia/}{CATIA}}
 
 % \resumeSkillItemHeading
 % 	{Manufacturing}
 % 	{University of Michigan Wilson Center Basic I $\&$ II, Mill Training}
 
-\resumeSkillItemHeading
-{Languages}
+\resumeSkillItemHeading{Languages}
 {English (first language), French (conversational), Tamil (conversational)}
 
 \resumeItemListEnd
