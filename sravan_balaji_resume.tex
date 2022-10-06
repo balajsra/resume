@@ -81,43 +81,22 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING-----------------
-\centering
-{\textbf{\Huge Sravan Balaji}}
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}lcr}
-	Email: \href{mailto:balajsra@umich.edu}{balajsra@umich.edu}
-	& Phone: (248) 417 - 0955
-	& LinkedIn: \href{https://www.linkedin.com/in/sravan-balaji/}{sravan-balaji}
-	& Website: \href{https://sravanbalaji.com/}{sravanbalaji.com}
-\end{tabular*}
+\begin{center}
+  {\textbf{\Huge Sravan Balaji}}
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}lcr}
+	   Email: \href{mailto:balajsra@umich.edu}{balajsra@umich.edu}
+	   & Phone: (248) 417 - 0955
+	   & LinkedIn: \href{https://www.linkedin.com/in/sravan-balaji/}{sravan-balaji}
+	   & Website: \href{https://sravanbalaji.com/}{sravanbalaji.com}
+  \end{tabular*}
+\end{center}
 
-%-----------EDUCATION-----------------
-\section{Education}
-
-\resumeCompanyListStart
-  % UMICH
-  \resumeCompanyHeading{\href{https://umich.edu/}{University of Michigan - Ann Arbor}}{Sep. 2016 - Dec. 2021}
-    \resumeJobHeading{M.S. in Robotics}{Ann Arbor, MI}{Jan. 2021 -- Dec. 2021}
-    % \resumeJobHeading{M.S. in Robotics; Focus in Acting; GPA: 3.982}{Ann Arbor, MI}{Jan. 2021 -- Dec. 2021}
-    % \resumeItemListStart
-    %   \item{Mobile Robotics; Design of Digital Control Systems; Self Driving Cars; Robotic Systems Lab}
-    % \resumeItemListEnd
-
-    \resumeJobHeading{B.S.E. in Mechanical Engineering}{Ann Arbor, MI}{Sep. 2016 -- Dec. 2020}
-    % \resumeJobHeading{B.S.E. in Mechanical Engineering; Focus in Controls; GPA: 3.776}{Ann Arbor, MI}{Sep. 2016 -- Dec. 2020}
-    % \resumeItemListStart
-    %   \item{Automatic Control; Modeling, Analysis, and Control of Dynamic Systems}
-    % \resumeItemListEnd
-
-    \resumeJobHeading{B.S.E. in Computer Science}{Ann Arbor, MI}{Sep. 2016 -- Dec. 2020}
-    % \resumeJobHeading{B.S.E. in Computer Science; Focus in Intelligent Systems; GPA: 3.776}{Ann Arbor, MI}{Sep. 2016 -- Dec. 2020}
-    % \resumeItemListStart
-    %   \item{Autonomous Robotics Lab; Machine Learning; Computer Vision}
-    % \resumeItemListEnd
-\resumeCompanyListEnd
+%----------SUMMARY-----------------
+\section{Summary}
+U.S. Citizen with active security clearance. Experienced roboticist with a strong multi-disciplinary background interested in working on ground, air, and underwater autonomous systems. Passionate about solving challenging problems through the power of autonomy.
 
 %-----------WORK EXPERIENCE-----------------
 \section{Work Experience}
@@ -125,7 +104,14 @@
 \resumeCompanyListStart
   % MITRE
   \resumeCompanyHeading{\href{https://mitre.org/}{MITRE}}{May 2021 - Present}
-    \resumeJobHeading{Associate Autonomous Systems Engineer}{McLean, VA}{Jan. 2022 -- Present}
+    \resumeJobHeading{Intermediate Autonomous Systems Engineer}{McLean, VA}{Sep. 2022 -- Present}
+
+    \resumeJobHeading{Associate Autonomous Systems Engineer}{McLean, VA}{Jan. 2022 -- Sep. 2022}
+    \resumeItemListStart
+      \resumeItem{Led effort to take global path planning algorithm from research paper pseudo code, to Python prototype, to C++ and ROS implementation on a \href{https://clearpathrobotics.com/husky-unmanned-ground-vehicle-robot/}{Clearpath Husky UGV}; conducted testing in simulation with \href{https://gazebosim.org/home}{Gazebo} and on the live platform; successfully able to avoid obstacles while applying desired safety factors}
+      \resumeItem{Developed an interface in Python to translate existing drone messaging protocols to \href{https://microsoft.github.io/AirSim/}{AirSim} API calls for seamless transition to new simulation setup}
+      \resumeItem{Aided research effort into improving Test \& Evaluation of Artificial Intelligence}
+    \resumeItemListEnd
 
     \resumeJobHeading{Graduate Navigation Intern}{Remote}{May 2021 -- Aug. 2021}
     \resumeItemListStart
@@ -133,6 +119,13 @@
       \resumeItem{Revamped and formalized software development process to improve visibility and organization of PNT Assurance project written in Julia}
       \resumeItem{Placed 3rd in team-based machine learning intern hackathon; identified malicious URLs based on URL strings and information on age of domain; achieved 0.94 F1 score}
       \resumeItem{Placed top 3 in intern AWS DeepRacer challenge; trained reinforcement learning model to control simulated autonomous vehicle around unseen race tracks}
+    \resumeItemListEnd
+
+  % University of Michigan
+  \resumeCompanyHeading{\href{https://umich.edu/}{University of Michigan - Ann Arbor}}{Jan. 2021 - Apr. 2021}
+    \resumeJobHeading{NA 568 Grader}{Remote}{Jan. 2021 -- Apr. 2021}
+    \resumeItemListStart
+      \resumeItem{Graded assignments for NA 568: Mobile Robotics at the University of Michigan - Ann Arbor}
     \resumeItemListEnd
 
   % Rivian
@@ -152,6 +145,29 @@
       \resumeItem{Implemented location based services on terminal software written in C; leveraged MQTT-SN protocol to provide low-cost method of sending GPS data to server}
     \resumeItemListEnd
 
+  % University of Michigan
+  \resumeCompanyHeading{\href{https://umich.edu/}{University of Michigan - Ann Arbor}}{Sep. 2016 - Apr. 2019}
+    \resumeJobHeading{Research Assistant in the \href{http://csdl.engin.umich.edu/}{Compliant Systems Design Lab}}{Ann Arbor, MI}{Jan. 2019 -- Apr. 2019}
+    \resumeItemListStart
+      \resumeItem{Formulated and conducted an experiment to investigate applicability of digital image correlation (DIC) for analyzing strain in fiber reinforced elastomeric enclosures (FREEs)}
+      \resumeItem{Manufactured a test setup to securely hold FREEs and control flow of compressed gas}
+      \resumeItem{Created FREEs with varying parameters by hand to investigate their behaviour under pneumatic loads}
+      \resumeItem{Developed a C++ program to analyze creep behavior of a FREE and generate plots}
+    \resumeItemListEnd
+
+    \resumeJobHeading{Intramural Sports Supervisor}{Ann Arbor, MI}{Sep. 2017 -- Dec. 2018}
+    \resumeItemListStart
+      \resumeItem{Voted Supervisor of the Year by peers for 2017-2018 school year}
+      \resumeItem{Developed an excel macro to automate scheduling supervisor shifts; eliminated issues with transportation of people and equipment present in manual scheduling process}
+      \resumeItem{Supervised intramural sports games at various facilities on campus; evaluated performance of officials to improve customer experience; resolved any disputes that arose}
+    \resumeItemListEnd
+
+    \resumeJobHeading{Intramural Sports Official}{Ann Arbor, MI}{Sep. 2016 -- Dec. 2018}
+    \resumeItemListStart
+      \resumeItem{Enforced the rules of the game for intramural soccer, flag football, and basketball matches between college students}
+      \resumeItem{Managed flow the game to ensure customer enjoyment and safety}
+    \resumeItemListEnd
+
   % Rivian
   \resumeCompanyHeading{\href{https://rivian.com/}{Rivian}}{May 2017 - Dec. 2018}
     \resumeJobHeading{Business Technology Intern}{Plymouth, MI}{May 2018 -- Dec. 2018}
@@ -163,28 +179,11 @@
 
     \resumeJobHeading{Vehicle Integration Intern}{Livonia, MI}{May 2017 -- Aug. 2017}
     \resumeItemListStart
+      \resumeItem{Created system architecture models to distribute and track requirements from system to component level}
+      \resumeItem{Managed requirements in DOORS Next Generation and created custom reports to distribute requirements to sub-teams}
       \resumeItem{Developed a program in Java to summarize results of simulation; allowed users to modify inputs to see projected results of simulation to avoid additional testing and reduce costs}
     \resumeItemListEnd
 \resumeCompanyListEnd
-
-%% %-----------RESEARCH-----------------
-%% \section{Research}
-%% \resumeSubHeadingListStart
-
-%% % Compliant Systems Design Lab
-%% \resumeSubheading
-%% {\href{http://csdl.engin.umich.edu/}{Compliant Systems Design Lab}}{Ann Arbor, MI}
-%% {Research Assistant}{Jan. 2019 -- Apr. 2019}
-
-%% \resumeItemListStart
-
-%% \item {Formulated and conducted an experiment to investigate applicability of digital image correlation (DIC) for analyzing strain in fiber reinforced elastomeric enclosures (FREEs)}
-
-%% \item {Analyzed creep behavior of FREEs and generated plots with C++ program}
-
-%% \resumeItemListEnd
-
-%% \resumeSubHeadingListEnd
 
 %--------PROJECTS------------
 % \section{Projects}
@@ -218,6 +217,29 @@
 
 % \resumeSubHeadingListEnd
 
+%-----------EDUCATION-----------------
+\section{Education}
+
+\resumeCompanyListStart
+  % UMICH
+  \resumeCompanyHeading{\href{https://umich.edu/}{University of Michigan - Ann Arbor}}{Sep. 2016 - Dec. 2021}
+    \resumeJobHeading{M.S. in Robotics; Focus in Acting; GPA: 3.982}{Ann Arbor, MI}{Jan. 2021 -- Dec. 2021}
+    \resumeItemListStart
+      \item{Mobile Robotics; Design of Digital Control Systems; Self Driving Cars; Robotic Systems Lab}
+    \resumeItemListEnd
+
+    \resumeJobHeading{B.S.E. in Mechanical Engineering; Focus in Controls; GPA: 3.776}{Ann Arbor, MI}{Sep. 2016 -- Dec. 2020}
+    \resumeItemListStart
+      \item{Automatic Control; Modeling, Analysis, and Control of Dynamic Systems}
+    \resumeItemListEnd
+
+    \resumeJobHeading{B.S.E. in Computer Science; Focus in Intelligent Systems; GPA: 3.776}{Ann Arbor, MI}{Sep. 2016 -- Dec. 2020}
+    \resumeItemListStart
+      \item{Autonomous Robotics Lab; Machine Learning; Computer Vision}
+    \resumeItemListEnd
+\resumeCompanyListEnd
+
+
 %--------SKILLS------------
 \section{Skills}
 \resumeItemListStart
@@ -233,7 +255,10 @@
 {\href{https://www.linux.org}{GNU/Linux}, \href{https://git-scm.com}{Git}, \href{https://www.docker.com}{Docker}, \href{https://code.visualstudio.com/?wt.mc_id=DX_841432}{Visual Studio Code}, \href{https://www.gnu.org/software/emacs/}{GNU Emacs}, \href{https://www.vim.org}{Vim}, \href{https://atom.io}{Atom}, \href{https://visualstudio.microsoft.com/vs/}{Visual Studio}}
 
 \resumeSkillItemHeading{Libraries/Frameworks}
-{\href{https://www.ros.org/}{ROS}, \href{https://numpy.org/}{NumPy}, \href{https://opencv.org}{OpenCV}, \href{https://pytorch.org/}{PyTorch}, \href{https://vuejs.org/}{Vue.js}, \href{https://getbootstrap.com/}{Bootstrap}, \href{https://gtsam.org/}{GTSAM}}
+{\href{https://www.ros.org/}{ROS}, \href{http://wiki.ros.org/move_base}{move\_base}, \href{https://numpy.org/}{NumPy}, \href{https://opencv.org}{OpenCV}, \href{https://pytorch.org/}{PyTorch}, \href{https://vuejs.org/}{Vue.js}, \href{https://getbootstrap.com/}{Bootstrap}, \href{https://gtsam.org/}{GTSAM}}
+
+\resumeSkillItemHeading{Robotics/Autonomy}
+{Controls, Path Planning, Kalman Filters, SLAM, GPS, Forward \& Inverse Kinematics, Machine Learning, Computer Vision}
 
 \resumeSkillItemHeading{Computer Aided Design}
 {\href{https://www.solidworks.com/}{SolidWorks},\href{https://www.3ds.com/products-services/catia/}{CATIA}}
