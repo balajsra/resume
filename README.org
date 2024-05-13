@@ -1,0 +1,38 @@
+#+TITLE: Sravan Balaji's Professional Resume
+#+AUTHOR: Sravan Balaji
+#+AUTO_TANGLE: t
+#+STARTUP: showeverything
+
+* Table of Contents :TOC_3:noexport:
+- [[#overview][Overview]]
+- [[#build-document][Build Document]]
+  - [[#dependencies][Dependencies]]
+  - [[#run-latexmk][Run LatexMk]]
+    - [[#generate-pdf][Generate PDF]]
+    - [[#clean-up-temporary-files][Clean Up Temporary Files]]
+
+* Overview
+
+This repository holds the source code (a ~.tex~ file) and generated PDF of my professional resume. See [[./LICENSE][LICENSE]] for usage information.
+
+* Build Document
+
+If you are looking to locally build this LaTeX document into a PDF or any other format, follow these instructions.
+
+** Dependencies
+
+Install [[https://tug.org/texlive/][TeX Live]] (with extra packages) and [[https://mg.readthedocs.io/latexmk.html][LatexMk]] either manually or via your operating system's package manager.
+
+** Run LatexMk
+
+*** Generate PDF
+
+#+BEGIN_SRC bash :tangle no
+latexmk -pdf <file-name>.tex
+#+END_SRC
+
+*** Clean Up Temporary Files
+
+#+BEGIN_SRC bash :tangle no
+latexmk -c
+#+END_SRC
